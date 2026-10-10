@@ -1,6 +1,397 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
+
+/* columna de 100% para el contenedor cabecera*/
+.cabecera {
+    display:flex;
+    width:100%;
+    height:0 auto;
+    /* background: #fff; */
+    
+}
+/* Columna de 20% para logotipo */
+.logotipo {
+    display:flex;
+    width: 20%;
+    height: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+ .logotipo a {
+    display:flex;
+    width:70%;
+    
+} 
+
+.loguito {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Columna de 80% para ingreso de datos */
+.secciondatos {
+    display:flex;
+    width:80%;
+   
+    height: 0 auto;
+    flex-direction: column;
+    
+}
+
+/* fila 1 y 2 ocupa el 50% de la altura disponible */
+.dir-reg-carrito,
+.tel-red {
+    display:flex;
+    width: 100%;
+    height: auto;
+}
+
+.dir-reg-carrito .dir{
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+/* centrar elementos de la celda */
+.celda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color:#ff6600;
+    
+    text-align: left;
+    padding: 3px;
+    /* border: 1px solid rgb(220, 189, 211); */
+}
+
+/* Fila superior */
+.dir-reg-carrito .dir{
+    width: 50%;
+    padding: 2rem;
+    background-color: #fff;
+    justify-content: left;
+    font-size: medium;
+    
+}
+.dir-reg-carrito .reg {
+    width: 40%;
+    background-color: #Fff;
+    font-size: medium;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+.reg a {
+    text-decoration: none;
+    color:#ff6600;
+}
+
+.barrita {
+    padding: 0px 30px 0px 30px;
+}
+
+.dir-reg-carrito .carrito {
+    width: 10%;
+    background-color: #FFF;
+    
+}
+.carrito p {
+    display:inline-block;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+} 
+.carrito img {
+    width: 35%;
+    align-items: center;
+}
+
+/* Fila inferior */
+.tel-red .tel{
+    width: 51%;
+    justify-content: left;
+    padding: 2rem;
+    font-size:medium;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+.tel-red .wha{
+    width: 8%;
+}
+.wha img {
+    width: 40%;
+    align-items: center;
+}
+.tel-red .fac{
+    width: 8%;
+}
+.fac img {
+    width: 40%;
+    align-items: center;
+}
+.tel-red .you{
+    width: 8%;
+}
+.you img {
+    width: 40%;
+    align-items: center;
+}
+.tel-red .ins{
+    width: 8%;
+}
+.ins img {
+    width: 40%;
+    align-items: center;
+}
+.tel-red .tik{
+    width: 8%;
+}
+.tik img {
+    width: 40%;
+    align-items: center;
+}
+.tel-red .eqi{
+    width: 8%;
+}
+.eqi img {
+    width: 40%;
+    align-items: center;
+}
+nav {
+    /* display: flex; */
+    width:100%;
+    font-style:normal;
+    font-family: serif;
+    background: #ff6600;
+    justify-content:space-around;
+}
+ul {
+    display:flex;
+    list-style: none;
+    background: #ff6600;
+    justify-content:space-around;
+}
+ul li {
+    display: inline-block;
+    text-align: center;
+    /* background: #ff6600; 
+    padding-left: 1rem;*/
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 1rem;
+    color: #FFF;
+    width:100%;
+}
+
+nav .menuipone:hover{
+    display: block;
+    background: #fff;
+    object-fit: contain;
+    justify-content: center;
+    width: 100%;
+    color:#ff6600;
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    height: 60vh;
+}
+
+article img {
+    position:absolute;
+    width:100%;
+    margin: 0 auto;
+    max-height: 60vh;
+    opacity: 0.2;
+}
+
+article h1 {
+   color: #ff6600;
+   font-size: xx-large;
+   padding-top: 30vh;
+   padding-left: 53vh;
+}
+article p {
+   color: #778899;
+   font-size: medium;
+   font-size:small;
+   padding-left:65vh;
+   padding-top: 15vh;
+}
+
+article p a{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    z-index: 10;
+}
+aside {
+    display:flex;
+    width:100%;
+    height: 6vh;
+    background: #fff;
+   
+}
+aside .asidemenu {
+    display:flex;
+    width:50%;
+    height: 100%;
+    font-family: sans-serif;
+    padding-top: 2vh;
+    font-size: small;
+    text-decoration: none;
+    justify-content:space-around;
+    
+}
+aside div a {
+    display:block;
+    text-decoration: none;
+    list-style: none;
+
+    color: #A9A9A9;
+}
+aside .asideredes {
+    display:flex;
+    width:50%;
+    height: 100%;
+    padding-top:1vh;
+}
+.asideredes a img{
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+    margin: 0 auto;
+    padding-left: 4rem;
+    width: 25%;
+    color : #000;
+}
+
+footer {
+    display:flex;
+    width:100%;
+    height: 3rem;
+    background: #000;
+    justify-content: center;
+    
+}
+footer p{
+    display:flex;
+    font-family:sans-serif;
+    font-style: oblique;
+    color:#fff;
+    font-style: italic;
+    padding-top: 2.5vh;
+}
+
+/* Responsividad (Moviles y Pantalla pequeñas)*/
+@media (max-width: 768px) {
+    .cabecera {
+        flex-direction: column;
+        height: auto;
+    }
+    .logotipo,
+    .selecciondatos {
+        width: 100%;
+    }
+    .logotipo {
+        padding: 2px;
+    }
+    .dir-reg-carrito,
+    .tel-red {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    /* En movil se reordenan las columnas para que sean legibles */
+    .dir-reg-carrito .celda,
+    .tel-red .celda {
+        width: 100% !important;
+        min-height: 35px;
+    }
+}
+
+
+/* 
+---------------MENU-----------------
+nav .menu{
+    display:flex;
+    justify-content:space-around;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    object-fit: contain;
+    background: #345;
+    
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.menu a:hover {
+    color: #ff6600;
+    background: #fff;
+    text-decoration: none;
+}
+
+---------------FIN MENU------------------------
+.cabecera {
+    width:100%;
+    border:2px solid #fff;
+    overflow:auto;
+}
+.logotipo {
+    background-image: url("orange.png");
+    width:10rem;
+    height:6rem;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.secciondatos {
+    display:inline-block;
+    background: #fff;
+    
+}
+.dir-reg-carrito {
+    display:inline-block;
+
+}
+.barra-menu ul li a{
+    display:block;
+    width: 100%;
+    height:15%;
+    list-style: none;
+}
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    display:inline-block;
+    text-align: center;
+}
+nav ul li a {
+    background: #ff6600;
+    display:inline-block;
+    padding:20px 30px;
+    font-size: 20px;
+    color:#fff;
+    margin:5px;
+    text-decoration: none;
+}
+a:hover{
+    background:#009dc3;
+    padding:21px 31px;
+} 
+    
+*/
